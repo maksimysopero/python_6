@@ -20,7 +20,7 @@ dim2 = [dim2_min, dim2_max]
 neural_net = nl.net.newp([dim1, dim2], nn_output_layer)
 error = neural_net.train(data, labels, epochs=200, show=20, lr=0.01) #Тренировка нейронной сети
 
-#Визуализация
+#Визуализируем
 plt.figure()
 plt.plot(error)
 plt.xlabel('Number of epochs')
